@@ -67,7 +67,11 @@ var btn=document.querySelector("button");
 					{	header.innerText="WE HAVE A WINER!" 
 					 draw=0
 					for(var i=0;i<arr.length;i++)
-									arr[i].removeEventListener("click",tictactoe);}
+									arr[i].removeEventListener("click",tictactoe);
+					arr[0].style.background="#6cbf84";
+					arr[3].style.background="#6cbf84";
+				 	arr[6].style.background="#6cbf84";			
+					}
 			  else if(arr[1].innerText === arr[4].innerText && arr[4].innerText=== arr[7].innerText )
 					{	header.innerText="WE HAVE A WINER!" 
 					 draw=0
@@ -93,7 +97,7 @@ var btn=document.querySelector("button");
 									arr[i].removeEventListener("click",tictactoe);
 					 arr[0].style.background="#6cbf84";
 				 	 arr[4].style.background="#6cbf84";
-				   arr[8].style.background="#6cbf84";
+				     arr[8].style.background="#6cbf84";
 					}		
 			  else if  ( arr[2].innerText === arr[4].innerText && arr[4].innerText=== arr[6].innerText )
 					{header.innerText="WE HAVE A WINER!" 
@@ -102,7 +106,7 @@ var btn=document.querySelector("button");
 									arr[i].removeEventListener("click",tictactoe);
 					 arr[2].style.background="#6cbf84";
 				 	 arr[4].style.background="#6cbf84";
-				   arr[6].style.background="#6cbf84";
+				     arr[6].style.background="#6cbf84";
 					}	
 				
 	if(cnt===9 && draw===1)
