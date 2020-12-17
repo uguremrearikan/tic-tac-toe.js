@@ -30,7 +30,7 @@ var btn=document.querySelector("button");
 			{
 					if(this === arr[i])
 					{
-						      arr[i].removeEventListener("click",tictactoe);
+						arr[i].removeEventListener("click",tictactoe);
 						cnt++;
 					}
 			}
@@ -38,79 +38,87 @@ var btn=document.querySelector("button");
 					
 				if( arr[0].innerText === arr[1].innerText && arr[1].innerText=== arr[2].innerText) 
 				{header.innerText="WE HAVE A WINER!" 
-				 draw=0
-				 		for(var i=0;i<arr.length;i++)
+				 
+				 				for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 				 	arr[0].style.background="#6cbf84";
 				 	arr[1].style.background="#6cbf84";
-				 	arr[2].style.background="#6cbf84";
+					arr[2].style.background="#6cbf84";
+					 draw=0
 				}
 			  else if( arr[3].innerText === arr[4].innerText && arr[4].innerText=== arr[5].innerText )
 				{header.innerText="WE HAVE A WINER!" 
-				 draw=0
-				 for(var i=0;i<arr.length;i++)
+				 
+				 				for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 				 	arr[3].style.background="#6cbf84";
 				 	arr[4].style.background="#6cbf84";
-				 	arr[5].style.background="#6cbf84";
+					arr[5].style.background="#6cbf84";
+					 draw=0
 				}	
 			  else if( arr[6].innerText === arr[7].innerText && arr[7].innerText=== arr[8].innerText) 
 					{	header.innerText="WE HAVE A WINER!" 
-					 draw=0
-						for(var i=0;i<arr.length;i++)
+					 
+								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 						arr[6].style.background="#6cbf84";
 				 		arr[7].style.background="#6cbf84";
-				 		arr[8].style.background="#6cbf84";
+						arr[8].style.background="#6cbf84";
+						 draw=0
 					}
 			  else if ( arr[0].innerText === arr[3].innerText && arr[3].innerText=== arr[6].innerText) 
 					{	header.innerText="WE HAVE A WINER!" 
-					 draw=0
-					for(var i=0;i<arr.length;i++)
+					 
+								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 					arr[0].style.background="#6cbf84";
 					arr[3].style.background="#6cbf84";
-				 	arr[6].style.background="#6cbf84";			
+					arr[6].style.background="#6cbf84";
+					 draw=0		
 					}
 			  else if(arr[1].innerText === arr[4].innerText && arr[4].innerText=== arr[7].innerText )
 					{	header.innerText="WE HAVE A WINER!" 
-					 draw=0
-						for(var i=0;i<arr.length;i++)
+					 
+								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 					arr[1].style.background="#6cbf84";
 					arr[4].style.background="#6cbf84";
-				 	arr[7].style.background="#6cbf84";
+					arr[7].style.background="#6cbf84";
+					 draw=0
 					}
 			  else if (arr[2].innerText === arr[5].innerText && arr[5].innerText=== arr[8].innerText ) 
 					{	header.innerText="WE HAVE A WINER!" 
-					 draw=0
-						for(var i=0;i<arr.length;i++)
+					 
+								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 						arr[2].style.background="#6cbf84";
 				 		arr[5].style.background="#6cbf84";
-				 		arr[8].style.background="#6cbf84";
+						arr[8].style.background="#6cbf84";
+						draw=0
 					}	
 			  else if ( arr[0].innerText === arr[4].innerText && arr[4].innerText=== arr[8].innerText )
 					{header.innerText="WE HAVE A WINER!" 
-					 draw=0
-						for(var i=0;i<arr.length;i++)
+					
+								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 					 arr[0].style.background="#6cbf84";
 				 	 arr[4].style.background="#6cbf84";
-				     arr[8].style.background="#6cbf84";
+					 arr[8].style.background="#6cbf84";
+					 draw=0
 					}		
 			  else if  ( arr[2].innerText === arr[4].innerText && arr[4].innerText=== arr[6].innerText )
 					{header.innerText="WE HAVE A WINER!" 
-					 draw=0
-						for(var i=0;i<arr.length;i++)
+					 
+								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
 					 arr[2].style.background="#6cbf84";
 				 	 arr[4].style.background="#6cbf84";
-				     arr[6].style.background="#6cbf84";
+					 arr[6].style.background="#6cbf84";
+					 draw=0
 					}	
 				
 	if(cnt===9 && draw===1)
-				header.innerText="DRAW";
+		header.innerText="DRAW"
 		
 
 }
@@ -131,6 +139,6 @@ function reset()
 		flag=1;
 	else
 		flag=0;
-	
+	draw=1;
 	cnt=0;
 }
