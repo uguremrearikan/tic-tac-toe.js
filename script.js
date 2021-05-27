@@ -4,7 +4,7 @@ var draw=1;
 var arr=document.querySelectorAll("div");
 var header=document.querySelector("h1");
 var btn=document.querySelector("button");
-
+const winner="WE HAVE A WINNER!"
 
 		for(var i=0;i<arr.length;i++)
 		{
@@ -37,7 +37,7 @@ var btn=document.querySelector("button");
 
 					
 				if( arr[0].innerText === arr[1].innerText && arr[1].innerText=== arr[2].innerText) 
-				{header.innerText="WE HAVE A WINER!" 
+				{header.innerText=winner;
 				 
 				 				for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
@@ -47,7 +47,7 @@ var btn=document.querySelector("button");
 					 draw=0
 				}
 			  else if( arr[3].innerText === arr[4].innerText && arr[4].innerText=== arr[5].innerText )
-				{header.innerText="WE HAVE A WINER!" 
+				{header.innerText=winner;
 				 
 				 				for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
@@ -57,7 +57,7 @@ var btn=document.querySelector("button");
 					 draw=0
 				}	
 			  else if( arr[6].innerText === arr[7].innerText && arr[7].innerText=== arr[8].innerText) 
-					{	header.innerText="WE HAVE A WINER!" 
+					{	header.innerText=winner;
 					 
 								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
@@ -67,7 +67,7 @@ var btn=document.querySelector("button");
 						 draw=0
 					}
 			  else if ( arr[0].innerText === arr[3].innerText && arr[3].innerText=== arr[6].innerText) 
-					{	header.innerText="WE HAVE A WINER!" 
+					{	header.innerText=winner; 
 					 
 								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
@@ -77,7 +77,7 @@ var btn=document.querySelector("button");
 					 draw=0		
 					}
 			  else if(arr[1].innerText === arr[4].innerText && arr[4].innerText=== arr[7].innerText )
-					{	header.innerText="WE HAVE A WINER!" 
+					{	header.innerText=winner;
 					 
 								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
@@ -87,7 +87,7 @@ var btn=document.querySelector("button");
 					 draw=0
 					}
 			  else if (arr[2].innerText === arr[5].innerText && arr[5].innerText=== arr[8].innerText ) 
-					{	header.innerText="WE HAVE A WINER!" 
+					{	header.innerText=winner;
 					 
 								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
@@ -97,7 +97,7 @@ var btn=document.querySelector("button");
 						draw=0
 					}	
 			  else if ( arr[0].innerText === arr[4].innerText && arr[4].innerText=== arr[8].innerText )
-					{header.innerText="WE HAVE A WINER!" 
+					{header.innerText=winner; 
 					
 								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
@@ -107,7 +107,7 @@ var btn=document.querySelector("button");
 					 draw=0
 					}		
 			  else if  ( arr[2].innerText === arr[4].innerText && arr[4].innerText=== arr[6].innerText )
-					{header.innerText="WE HAVE A WINER!" 
+					{header.innerText=winner;
 					 
 								for(var i=0;i<arr.length;i++)
 									arr[i].removeEventListener("click",tictactoe);
